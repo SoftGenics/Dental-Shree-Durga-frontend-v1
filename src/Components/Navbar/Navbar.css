@@ -1,0 +1,50 @@
+.top-navbar {
+background-color: black;
+opacity: 0.9;
+margin-top: 2.5rem !important;
+}
+.top-navbar-logo img {
+    width: 280px;
+    height: 90px;
+}
+.top-navbar-logo-size img {
+    width: 250px;
+    height: 60px;
+}
+.top-navbar-links .nav-link {
+    color: #ffff !important;
+    padding: 10px;
+    font-size: 18px;
+    transition: all 0.4s ease 0s;
+}
+.top-navbar-links .nav-link:hover {
+text-decoration: underline  4px solid red;
+text-underline-position: under;
+}
+@media (max-width: 992px) {
+.top-navbar .navbar-collapse {
+        position: fixed;
+        top: 160px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+        background-color: black !important;
+    }
+
+    .top-navbar .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .top-navbar .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .top-navbar .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
